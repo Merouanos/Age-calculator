@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          purple: 'hsl(259, 100%, 65%)',
+          lightRed: 'hsl(0, 100%, 67%)',
+            white: 'hsl(0, 0%, 100%)',
+            offWhite: 'hsl(0, 0%, 94%)',
+            lightGrey: 'hsl(0, 0%, 86%)',
+            smokeyGrey: 'hsl(0, 1%, 44%)',
+            offBlack: 'hsl(0, 0%, 8%)',
+          },
+        },
+      },
+    }
+</script>
+
+
+<style type="text/tailwindcss">
+  @layer utilities {
+    label{
+      @apply text-sm tracking-[0.2rem]  uppercase sm:tracking-[0.3rem] font-bold  row-start-1
+      
+    }
+    input{
+      @apply w-11/12 sm:h-14 h-10  border  rounded-lg px-4 sm:px-6  sm:text-3xl text-sm font-bold placeholder:text-lightGrey  focus:border-purple focus:outline-none caret-purple focus:border-2 text-black
+    }
+
+    h2{
+      @apply text-5xl md:text-6xl lg:text-7xl font-bold italic
+    }
+
+    .special{
+       @apply sm:text-sm text-xs italic text-lightRed row-start-3
+    }
+
+
+    @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/assets/fonts/Poppins-Regular.ttf) format('woff2');
+  }
+  @font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Bold.ttf') format('woff2');
+
+  font-weight: 700; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-Italic.ttf') format('woff2');
+  font-weight: 400; 
+  font-style: italic; 
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/Poppins-BoldItalic.ttf') format('woff2');
+  font-weight: 700; 
+  font-style: italic; 
+}
+  }
+</style>
+
+
+
+
+
+</head>
+<body class="bg-offWhite font-[Poppins]">
+  <div class="bg-white  lg:w-1/2 sm:px-8 px-4 py-14  mt-10 sm:w-3/4 w-11/12 mx-auto border rounded-3xl  flex flex-col justify-between  rounded-br-[5rem]"> 
+
+<div class="grid grid-cols-3 gap-y-2  xl:mr-40 ">
+  
+  <label for="Day" class="text-smokeyGrey">Day</label>
+  <input class="border-lightGrey" type="text" maxlength="2" id="Day" placeholder="DD">
+  <div class="special hidden col-start-1">This field is required</div>
+  <div class="special hidden col-start-1">Must be a valid day</div>
+
+
+  <label for="Month" class="text-smokeyGrey">Month</label>
+  <input class="border-lightGrey" type="text" maxlength="2" id="Month" placeholder="MM"> 
+  <div class="special hidden col-start-2">This field is required</div>
+  <div class="special hidden col-start-2">Must be a valid month</div>
+
+
+  <label for="Year" class="text-smokeyGrey">Year</label>
+  <input class="border-lightGrey" type="text" maxlength="4" id="Year" placeholder="YYYY"> 
+  <div class="special hidden col-start-3">This field is required</div>
+  <div class="special hidden col-start-3">Must be in the past</div>
+
+
+
+</div>
+
+
+
+<div class="flex mt-10 items-center">
+  <div class="border  w-full h-0 "></div>
+<div id="btn" class="bg-purple active:bg-slate-700 p-5 w-fill rounded-full hover:cursor-pointer hover:bg-black">
+  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+    <g fill="none" stroke="white" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+</div>
+<div class="border sm:hidden block w-full h-0 "></div>
+</div>
+<div class="mt-10 row-start-3 ">
+  <h2><span class="text-purple">--</span> years</h2>
+  <h2><span class="text-purple">--</span> months</h2>
+  <h2><span class="text-purple">--</span> days</h2>
+</div>  
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Merouanos">Merouanos</a>.
+  </div>
+</body>
+</html>
+
+
+<script src="fulljs.js"></script>
