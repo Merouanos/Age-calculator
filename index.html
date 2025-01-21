@@ -59,11 +59,11 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/assets/fonts/Poppins-Regular.ttf) format('woff2');
+    src: url('./assets/fonts/Poppins-Regular.ttf') format('woff2');
   }
   @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins-Bold.ttf') format('woff2');
+  src: url('./assets/fonts/Poppins-Bold.ttf') format('woff2');
 
   font-weight: 700; 
   font-style: normal; 
@@ -71,14 +71,14 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins-Italic.ttf') format('woff2');
+  src: url('./assets/fonts/Poppins-Italic.ttf') format('woff2');
   font-weight: 400; 
   font-style: italic; 
 }
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins-BoldItalic.ttf') format('woff2');
+  src: url('./assets/fonts/Poppins-BoldItalic.ttf') format('woff2');
   font-weight: 700; 
   font-style: italic; 
 }
@@ -91,9 +91,9 @@
 
 </head>
 <body class="bg-offWhite font-[Poppins]">
-  <div class="bg-white  lg:w-1/2 sm:px-8 px-4 py-14  mt-10 sm:w-3/4 w-11/12 mx-auto border rounded-3xl  flex flex-col justify-between  rounded-br-[5rem]"> 
-
-<div class="grid grid-cols-3 gap-y-2  xl:mr-40 ">
+  <div class="bg-white  lg:w-1/2 sm:px-8 px-4 py-14  mt-20 sm:w-3/4 w-11/12 mx-auto border rounded-3xl  flex flex-col justify-between  rounded-br-[5rem]"> 
+<h1 class="hidden">My website</h1>
+<header class="grid grid-cols-3 gap-y-2  xl:mr-40 ">
   
   <label for="Day" class="text-smokeyGrey">Day</label>
   <input class="border-lightGrey" type="text" maxlength="2" id="Day" placeholder="DD">
@@ -114,29 +114,29 @@
 
 
 
-</div>
+</header>
 
 
 
-<div class="flex mt-10 items-center">
+<main class="flex mt-10 items-center">
   <div class="border  w-full h-0 "></div>
 <div id="btn" class="bg-purple active:bg-slate-700 p-5 w-fill rounded-full hover:cursor-pointer hover:bg-black">
   <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
     <g fill="none" stroke="white" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
 </div>
 <div class="border sm:hidden block w-full h-0 "></div>
-</div>
-<div class="mt-10 row-start-3 ">
+</main>
+<aside class="mt-10 row-start-3 ">
   <h2><span class="text-purple">--</span> years</h2>
   <h2><span class="text-purple">--</span> months</h2>
   <h2><span class="text-purple">--</span> days</h2>
-</div>  
+</aside>  
 </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Merouanos">Merouanos</a>.
-  </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge"  target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Merouanos"  >Merouanos</a>.
+  </footer>
 </body>
 </html>
 
